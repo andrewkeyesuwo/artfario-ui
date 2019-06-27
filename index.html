@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+	<style>
+			body {
+				background-color: black;
+			} 
+			
+			.my-button  {
+				opacity: 0.5;
+				font-family: Cambria;
+				width: 96%;
+			}
+			
+			#title {
+				color: white;
+				font-style: italic;
+			}
+			
+			#mainPic {
+				object-fit: scale-down;
+				height: 80vh;
+				object-position: 50% 50%;
+			}
+
+			#deckPic {
+				object-fit: scale-down;
+				height: 80vh;
+				object-position: 50% 50%;
+			}
+			
+			.my-auto {
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+
+			.non-active {
+				display: none;
+			}
+	</style>
+</head>
+<body>
+	<div class="container my-con">
+		<div class="row">
+			<div class="col-2 my-col">
+			
+			</div>
+			<div class="col-8 justify-content-around">
+				<div class="row" style="height: 10vh;">
+					<div class="col my-auto">
+						<div class="row justify-content-around">
+							<h4 id="title">The Annunciation; Virgin and Child with Angels; The Resurrection</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="height: 80vh;">
+					<div class="col">
+						<div class="row justify-content-around">
+							<img id="mainPic" class="img-fluid">
+							<img id="deckPic" class="img-fluid non-active">
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-around" style="height: 10vh;">
+					<div class="col my-auto">
+						<div class="row">
+							<button class="btn btn-outline-secondary my-button" onlclick="orderArt()">Order</button>
+						</div>
+					</div>
+					<div class="col my-auto">
+						<div class="row">
+							<button class="btn btn-outline-secondary my-button" onclick="dislikeArt()">Dislike</button>
+						</div>
+					</div>
+					<div class="col my-auto">
+						<div class="row">
+							<button class="btn btn-outline-secondary my-button" onclick="likeArt()">Like</button>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="col-2 my-col">
+				
+			</div>
+		</div>
+	</div>
+
+<!--
+	
+	<div id="overlay">
+		<div> 
+			<button type="button" class="btn" onclick="orderArt()">Order</button>
+			<button type="button" class="btn" onclick="likeArt()">Like</button>
+			<button type="button" class="btn" onclick="dislikeArt()">Dislike</button>
+		</div>
+	</div>
+	
+	
+-->
+
+	<script src="js/main.js"></script>
+	<script src="js/selectArt.js"></script>  
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
